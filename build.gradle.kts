@@ -17,6 +17,17 @@ dependencies {
     testImplementation("org.mockito:mockito-core:1.10.19")
 }
 
+publishing {
+    publications {
+        create<MavenPublication>("mavenJava") {
+            from(components["java"])
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
+}
+
 tasks.test {
     useJUnitPlatform()
 }
