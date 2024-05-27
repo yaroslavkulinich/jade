@@ -7,7 +7,6 @@
 package jlg.jade.common;
 
 public class AsterixException {
-
     public static class InvalidDisplayName extends RuntimeException{
     }
 }
